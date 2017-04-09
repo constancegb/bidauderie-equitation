@@ -1,0 +1,1383 @@
+@import url('https://fonts.googleapis.com/css?family=Anton|Dancing+Script|Roboto');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+
+/* Supprime les marges sur tous le site */
+body {
+  margin:0;
+  background-color: white;
+}
+
+/* SPINNER */
+#loading {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#loading img {
+  width: 120px;
+  height: 120px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* NAVBAR (pour ailleurs qu'en page d'accueil?)*/
+#menu-container-index {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #34495e;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+#menu-left-index img {
+  width: 40px;
+  height: 40px;
+  margin-left: 20px;
+}
+
+#menu-right-index ul {
+  display: flex;
+  flex-direction: row;
+  text-transform: uppercase;
+  font-family: 'Anton';
+  letter-spacing: 2px;
+  padding: 20px;
+}
+
+#menu-right-index li a {
+  padding: 20px;
+  text-decoration: none;
+  color: white;
+}
+
+#menu-right-index img {
+  width: 20px;
+  height: 20px;
+}
+
+/* Navbar - Page d'accueil */
+#menu-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 15px;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+#menu-right li a:hover {
+    color: #e74c3c;
+}
+
+#menu-left img {
+  width: 40px;
+  height: 40px;
+  margin-left: 30px;
+}
+
+#menu-left li:last-child {
+    display: none;
+}
+
+#menu-left li:last-child:hover {
+    display: block;
+}
+
+#menu-left li:first-child:hover {
+    display: none;
+}
+
+#menu-right ul {
+  display: flex;
+  flex-direction: row;
+  text-transform: uppercase;
+  font-family: 'Anton';
+  letter-spacing: 2px;
+  padding: 20px;
+}
+
+#menu-right li a {
+  padding: 17px;
+  text-decoration: none;
+  color: white;
+}
+
+#menu-right img {
+  width: 20px;
+  height: 20px;
+}
+
+/* Home screen */
+#bg-index {
+  background-image: url(../equipe.jpg);
+  width: 100%;
+  height: 680px;
+  background-size: 100%;
+  background-position: bottom;
+  opacity: 0.83;
+}
+
+#index-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 420px; /* à repositionner? */
+}
+
+#title p {
+  color: white;
+  font-family: 'Anton';
+  font-size: 5em;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+#title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#title p:last-child {
+  font-size: 4em;
+  color: white;
+  font-family: 'Dancing Script';
+  margin-left: 30px;
+}
+
+#arrow img {
+  width: 80px;
+  height: 50px;
+  margin-top: 5px;
+}
+
+
+/* Page d'accueil part 2 avec divs déroulantes + text */
+#welcome-to-vierzon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
+  font-size: 2.1em;
+}
+
+#welcome-to-vierzon div:first-child p {
+  width: 170px;
+  text-align: center;
+  font-size: 2em;
+  font-family: 'Dancing Script';
+}
+
+#welcome-to-vierzon div:first-child {
+  width: 400px;
+  height: 300px;
+  background-color: #34495e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#welcome-to-vierzon div:last-child p {
+  width: 900px;
+  height: auto;
+  position: relative;
+  /*font-size: 2em;*/
+  color: #34495e;
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+#welcome-to-vierzon div:last-child {
+  width: 400px;
+  /*height: 750px; -> remove because hieght:auto*/
+  background-color: #ecf0f1;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 130%;
+}
+
+#welcome-to-vierzon img {
+  width: 60px;
+  height: 60px;
+}
+
+/* Page d'accueil part 3 logos disciplines */
+#disciplines {
+  width: 100%;
+  height: 95px;
+  background-color: #34495e;
+  display: flex;
+  margin-bottom: 90px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#disc-title p {
+  color: white;
+  font-family: 'Anton';
+  font-size: 1.3em;
+  letter-spacing: 1px;
+  margin-bottom: 0;
+}
+
+#disc-icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#disc-icons div {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  background-color: #e74c3c;
+  border: 1px solid white;
+  border-radius: 2px;
+}
+
+#disc-icons img {
+  width: 35px;
+  height: 35px;
+}
+
+#readmore {
+  width: 100px;
+  height: 40px;
+  font-family: 'Anton';
+  color: #e74c3c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid white;
+  border-radius: 3px;
+  margin-left: 30px;
+  margin-right: 50px;
+}
+
+#readmore a {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: lighter;
+}
+
+#readmore p {
+    margin-bottom: 0;
+}
+
+/* Equitation pour tous, page d'accueil part 4 */
+
+#equitation-pour-tous {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#categories {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 700px;
+}
+
+#eq-title {
+  color: #34495e;
+  font-family: 'Dancing Script';
+  font-size: 5em;
+}
+
+.ruban {
+    width: 100%;
+    height: 350px;
+    background-color: #34495e;
+    position: relative;
+}
+
+.ruban div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    width: 50%;
+}
+
+#vignette {
+    background-color: beige;
+}
+
+
+
+/* Partenaires */
+#partenaires-container {
+  background-color: #ecf0f1;
+  width: 100%;
+  height: 100px;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#partenaires-title p {
+  color: #e74c3c;
+  font-family: 'Anton';
+  font-size: 1.5em;
+  margin-bottom: 0;
+  padding: 10px
+}
+
+#partenaires-icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-left: 75px;
+}
+
+#partenaires-icons p {
+  font-family: 'Dancing Script';
+  color: #34495e;
+  font-size: 1.2em;
+  width: 100px;
+  text-align: center;
+  font-weight: bold;
+  margin-right: 10px;
+  margin-left: 5px;
+}
+
+#partenaires-icons img {
+  width: 70px;
+  height: 60px;
+  margin-right: 10px;
+  margin-left: 5px;
+}
+/* why can't I f*** overwrite #readmore? need blue button html 129*/
+button {
+    border: 1px solid #34495e;
+}
+
+.button a {
+    color: #34495e;
+}
+
+/* Equipe */
+#equipe-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+#equipe-img img {
+  height: 480px;
+}
+
+#equipe-desc p {
+  font-family: 'Roboto';
+  font-weight: lighter;
+  font-size: 2.3em;
+  color: #34495e;
+}
+
+#contact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#meetus {
+  padding: 10px;
+  background-color: white;
+  border: 2px solid #e74c3c;
+  border-radius: 2px;
+  margin: 30px;
+}
+
+#meetus:hover {
+  background-color: #34495e;
+  color: white;
+}
+
+#meetus a {
+  color: #e74c3c;
+  font-family: 'Anton';
+  font-size: 1em;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+
+#write {
+  padding: 10px;
+  background-color: white;
+  border: 2px solid #e74c3c;
+  border-radius: 2px;
+  margin: 30px;
+}
+
+#write:hover {
+  background-color: #34495e;
+  color: white;
+}
+
+#write a {
+  color: #e74c3c;
+  font-family: 'Anton';
+  font-size: 1em;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+
+/* Footer */
+footer {
+  background-color: #34495e;
+  width: 100%;
+  height: 250px;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  line-height: 10px;
+  padding-top: 20px;
+}
+
+#footer1-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#map-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#address p {
+  font-family: 'Roboto';
+  font-size: 0.8em;
+  color: white;
+  padding-left: 10px;
+}
+
+#plan-site {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#plan-site li a {
+  font-family: 'Roboto';
+  font-size: 0.8em;
+  color: white;
+  text-decoration: none;
+  line-height: 30px;
+}
+
+#plan-site li a:hover {
+  text-decoration: underline;
+}
+
+#social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#social-title p {
+  font-family: 'Dancing Script';
+  font-size: 1.3em;
+  color: white;
+}
+
+#logo-social img {
+  width: 30px;
+  height: 30px;
+}
+
+#footer2-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#footer2-container p {
+  margin-top: 40px;
+  font-family: 'Roboto';
+  font-size: 0.6em;
+  color: white;
+  padding: 5px;
+}
+
+/* ------ HISTOIRE DU CLUB ------- */
+
+#club-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #e74c3c;
+  width: 100%;
+  height: 45px;
+  margin-top: 70px;
+  box-shadow: 2px 2px 2px #7f8c8d;
+}
+
+#club-menu p {
+  padding: 10px;
+  margin: 5px;
+  color: white;
+  font-family: Roboto;
+}
+
+#club-menu .active {
+  border-bottom: 2px solid white;
+}
+
+#histoire-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 200px;
+}
+
+#histoire-title p {
+  font-size: 3em;
+  color: #34495e;
+  font-family: Roboto;
+  font-weight: bold;
+}
+
+#histoire-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#histoire-img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-image: url(centre-equestre.jpg);
+  background-position: bottom right;
+  background-size: cover;
+  margin-bottom: 80px;
+}
+
+#histoire-txt {
+  width: 500px;
+  margin-left: 70px;
+}
+
+#histoire-txt p {
+  color: #34495e;
+  font-size: 1em;
+  font-family: Roboto;
+  margin: 30px;
+  text-align: justify;
+  padding-top: 30px;
+}
+
+#histoire-txt span {
+  text-decoration: underline;
+}
+
+
+/* ------ EMPLOYES ------ */
+
+#equipe-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+#equipe-title p {
+  color: #34495e;
+  font-family: Roboto;
+  font-size: 3em;
+  font-weight: bold;
+}
+
+#equipe-container-club {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#employes-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 40px;
+  margin-right: 40px;
+  width: 250px;
+  height: 350px;
+  background-color: #ecf0f1;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+#employes-img img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  border: 2px solid white;
+}
+
+#employes-txt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#employes-txt p {
+  text-align: center;
+  line-height: 20px;
+  color: #34495e;
+  font-family: Roboto;
+}
+
+#employes-txt p:first-child {
+  font-weight: bold;
+}
+
+/* ------ ASSOCIATION ------- */
+
+#asso-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: center;
+  margin-top: 80px;
+}
+
+#asso-title p {
+  color: #34495e;
+  font-family: Roboto;
+  font-size: 3em;
+  font-weight: bold;
+}
+
+#asso-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+#asso-img-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-left: 40px;
+}
+
+#asso-container img {
+  width: 350px;
+  height: 250px;
+  margin-right: 50px;
+}
+
+#asso-container p {
+  width: 550px;
+  color: #34495e;
+  text-align: justify;
+  margin-top: 50px;
+}
+
+#asso-container ul {
+  width: 550px;
+}
+
+#asso-container ul li {
+  list-style: circle;
+  margin: 10px;
+}
+
+/* ------ INSTALLATIONS ------ */
+
+#installations-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 100px;
+}
+
+#installations-img-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: auto;
+}
+
+#level {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 200px;
+}
+
+.img1 {
+  background-image: url(saut.jpg);
+  background-size: 160%;
+  width: 200px;
+  height: 200px;
+}
+
+.img2 {
+  background-image: url(bg.jpg);
+  background-size: 160%;
+  width: 200px;
+  height: 200px;
+}
+
+.img3 {
+  background-image: url(equipe.jpg);
+  background-size: 160%;
+  width: 200px;
+  height: 200px;
+}
+
+.img4 {
+  background-image: url(formation.jpg);
+  background-size: 190%;
+  width: 200px;
+  height: 200px;
+}
+
+#installations-title {
+  background-color: rgba(52, 73, 94,1);
+  color: white;
+  padding: 20px;
+  font-size: 1em;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+}
+
+#installations-desc-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+#installations-desc-container ul {
+  width: 400px;
+}
+
+#installations-desc-container li {
+  list-style-type: circle;
+  margin: 8px;
+}
+
+/* ------ CAVALERIE ------*/
+
+#cavalerie-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #34495e;
+  font-size: 3em;
+  margin-top: 100px;
+  font-weight: bold;
+}
+
+#cavalerie-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+#poney-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 30px;
+}
+
+#chevaux {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-image: url(chevaux.jpg);
+  background-size: 160%;
+}
+
+#grands-poneys {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-image: url(grand-poney.jpg);
+  background-size: 140%;
+  background-position: center;
+}
+
+#shet {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-image: url(shet.jpg);
+  background-size: 160%;
+  background-position: center;
+}
+
+#poney-proprietaires {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-image: url(bg.jpg);
+  background-size: 160%;
+  background-position: center;
+}
+
+#type-desc p {
+  color: #34495e;
+  text-transform: uppercase;
+}
+
+/* ------ ACTIVITÉS ------ */
+
+#activites-container {
+  margin-top: 140px;
+}
+
+#particuliers-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  font-family: Roboto;
+}
+
+#card {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+
+.card-title {
+  font-family: Roboto;
+  font-weight: bold;
+  z-index: 2;
+}
+
+#black-img {
+  width: 350px;
+  height: 231px;
+  background-color: rgba(0,0,0,0.6);
+  position: absolute;
+  z-index: 1;
+}
+
+#card-action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#card-action a {
+  background-color: #e74c3c;
+  padding: 10px;
+  color: white;
+  margin: 5px;
+  border-radius: 3px;
+  font-family: Roboto;
+  width: 100px;
+  text-align: center;
+}
+
+.card-content {
+  color: #34495e;
+}
+
+.card-content p {
+  font-weight: bold;
+}
+
+.card-content ul {
+  margin: 10px;
+}
+
+.card-content li {
+  list-style: circle;
+  margin-top: 5px;
+}
+
+/* Projet pédagogique */
+
+#project-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: 'Dancing Script';
+  margin-top: 100px;
+}
+
+#project-container div:first-child p {
+  text-align: center;
+  font-size: 3.5em;
+}
+
+#project-container div:first-child {
+  width: 500px;
+  height: 300px;
+  background-color: #34495e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#project-container div:last-child p {
+  width: 900px;
+  height: auto;
+  position: relative;
+  font-size: 2em;
+  color: #34495e;
+  text-align: center;
+  margin-top: 80px;
+}
+
+#project-container div:last-child {
+  width: 500px;
+  height: 850px;
+  background-color: #ecf0f1;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#project-container img {
+  width: 60px;
+  height: 60px;
+}
+
+/* Disciplines enseignées */
+
+#disciplines-container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.disc-title {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  color: #34495e;
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.disciplines {
+  background-color: #ecf0f1;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#disc-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#disc-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #e74c3c;
+  width: 90px;
+  height: 90px;
+  border-radius: 2px;
+  margin: 20px;
+}
+
+#disc-container img {
+  width: 40px;
+  height: 40px;
+  margin-top: 10px;
+}
+
+#disc-container p {
+  color: white;
+  font-family: Roboto;
+  margin-top: 10px;
+}
+
+#disciplines-other-container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  background-color: #ecf0f1;
+}
+
+.disciplines-other {
+  background-color: #ecf0f1;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.disc-other-title {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  color: #34495e;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+#ext-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #e74c3c;
+  width: 210px;
+  height: 110px;
+  border-radius: 2px;
+  margin: 20px;
+}
+
+#ext-container img {
+  width: 40px;
+  height: 40px;
+  margin-top: 10px;
+}
+
+#ext-container p {
+  color: white;
+  font-family: Roboto;
+  margin-top: 10px;
+  text-align: center;
+}
+
+#diplome-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #e74c3c;
+  width: 200px;
+  height: 110px;
+  border-radius: 2px;
+  margin: 20px;
+}
+
+#diplome-container img {
+  width: 40px;
+  height: 40px;
+  margin-top: 10px;
+}
+
+#diplome-container p {
+  color: white;
+  font-family: Roboto;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Groupes */
+
+#groupes-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+#black-grp {
+  background-color: rgba(0,0,0,0.7);
+  width: 800px;
+  height: 400px;
+  z-index: 1;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#black-grp div p {
+  color: white;
+  font-family: Roboto;
+  font-size: 3em;
+  text-shadow: 1px 1px 1px red;
+}
+
+#groupe-level1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.grp-img {
+  background-image: url(bg.jpg);
+  background-position: center;
+  background-size: 170%;
+  width: 800px;
+  height: 400px;
+  position: relative;
+  z-index: 0;
+}
+
+.grp-desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 480px;
+  height: 400px;
+  background-color: #34495e;
+}
+
+.grp-desc p {
+  color: white;
+  font-family: Roboto;
+  font-size: 2em;
+}
+
+#groupe-level2 {
+  background-color: #ecf0f1;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#groupe-level2 div:first-child p {
+  color: #34495e;
+  font-size: 1.5em;
+  font-family: Roboto;
+  font-weight: bold;
+  margin-right: 30px;
+}
+
+#groupe-level2 div:nth-child(2) img {
+  width: 100px;
+  height: 70px;
+}
+
+#groupe-level2 div:nth-child(3) img {
+  width: 90px;
+  height: 90px;
+}
+
+#groupe-level2 div:nth-child(4) img {
+  width: 70px;
+  height: 70px;
+}
+
+#groupe-level2 img {
+  margin: 30px;
+}
+
+#acc-grp-img p {
+  text-align: center;
+  color: #34495e;
+  font-family: Roboto;
+  margin: 20px;
+  width: 170px;
+}
+
+/* Devis */
+
+#devis-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #34495e;
+  width: 100%;
+  height: 200px;
+}
+
+#devis-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#formation-container {
+  width: 900px;
+  height: auto;
+  padding: 50px;
+  background-color: #ecf0f1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 200px;
+  margin-top: 100px;
+}
+
+#formation-title p {
+  color: #34495e;
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+#formation-collapsible {
+  width: 700px;
+  border-radius: 2px;
+  margin-top: 50px;
+}
+
+.collapsible-header {
+  font-family: Roboto;
+  color: #e74c3c;
+}
+
+.collapsible-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.collapsible-header img {
+  width: 10px;
+  height: 10px;
+  margin: 10px;
+}
+
+.collapsible-body span {
+  color: #34495e;
+  font-family: Roboto;
+}
+
+#formation-partenaires {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 30px;
+  margin-top: 100px;
+}
+
+#formation-partenaires p:first-child {
+  color: #34495e;
+  font-weight: bold;
+  text-align: center;
+  font-size: 2em;
+  width: 130px;
+  font-family: Roboto;
+}
+
+#partenaires-form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+#partenaires-form img {
+  width: 90px;
+  height: 90px;
+  margin: 20px;
+}
+
+#partenaires-form p {
+  color: #34495e;
+  font-size: 1.1em;
+  font-family: Dancing Script;
+  font-weight: bold;
+  text-align: center;
+  width: 130px;
+}
+
+
+
+
+
+
+
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "materialize";

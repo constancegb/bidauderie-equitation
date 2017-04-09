@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>La Bidauderie</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="styles/style.css" media="all" />
+</head>
+<body>
+
+  <div id="activites-container">
+    <div id="menu-container-index" class="navbar-fixed-top">
+      <div id="menu-left-index">
+        <ul>
+          <li><img src='logo.png' /></li>
+        </ul>
+      </div>
+      <div id="menu-right-index">
+        <ul>
+          <li><a href="#">Le club</a></li>
+          <li><a href="#">Activités</a</li>
+          <li><a href="#">Tarifs</a</li>
+          <li><a href="#">Contact</a</li>
+          <li><a href="#">Partenaires</a</li>
+          <li><a href="#"><img src='facebook.png' /></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="club-menu" class="navbar-fixed-top">
+      <p class="active">Le Club</p>
+      <p>Groupes</p>
+      <p>Devis</p>
+      <p>Formation</p>
+    </div>
+
+    <div id="particuliers-container">
+      <div class="row">
+        <div class="col s12 m7">
+          <div class="card" id="card">
+            <div class="card-image">
+              <div id="black-img"></div>
+              <img src='saut.jpg' />
+              <span class="card-title">Cours d'équitation</span>
+            </div>
+            <div class="card-content">
+              <p>À partir de 4 ans en cours collectifs</p>
+              <ul>
+                <li>Séances découverte pour baby poney (-4ans)</li>
+                <li>Compétitions CSO</li>
+                <li>Poney jusqu’en Poney Élite, Cheval jusqu’en Club Élite et Ama Élite pour les propriétaires</li>
+                <li>Participation annuelle aux championnats Club Poney Lamotte, Sologn Pony, Meeting des propriétaires</li>
+                <li>organisation de compétitions cso dressage</li>
+              </ul>
+            </div>
+            <div class="card-action" id="card-action">
+              <a href="#">Voir Tarifs</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s12 m7">
+          <div class="card" id="card">
+            <div class="card-image">
+              <div id="black-img"></div>
+              <img src='saut2.jpg' />
+              <span class="card-title">Écurie de propriétaires</span>
+            </div>
+            <div class="card-content">
+              <p>Prestations propriétaires</p>
+              <ul>
+                <li>Pension boxe avec sorties paddocks</li>
+                <li>Pension pré en troupeau</li>
+                <li>travail des chevaux</li>
+                <li>Coaching en concours</li>
+              </ul>
+            </div>
+            <div class="card-action" id="card-action">
+              <a href="#">Voir Tarifs</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s12 m7">
+          <div class="card" id="card">
+            <div class="card-image">
+              <div id="black-img"></div>
+              <img src='saut3.jpg' />
+              <span class="card-title">Promenade Baby Poney</span>
+            </div>
+            <div class="card-content">
+              <p>Avant 4 ans</p>
+              <ul>
+                <li>Promenade en main familiarisation</li>
+                <li>Cours spécifiques pour les 4/6ans</li>
+                <li>Séances d’une heure</li>
+              </ul>
+            </div>
+            <div class="card-action" id="card-action">
+              <a href="#">Voir Tarifs</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="project-container">
+      <div>
+        <p>Projet pédagogique</p>
+      </div>
+      <div>
+        <p>
+          Chez l’enfant, l’équitation favorise son développement au plan social, affectif, psychomoteur et physiologique.
+          Ensuite en plus de l’aspect bénéfique d’un sport de plein air collectif s’installe une vraie communication
+          avec son cheval.
+        </p> <br>
+        <img src='horseshoe.png' />
+        <p>
+          Le but de tout cavalier est d’arriver à faire corps avec son cheval c’est à dire trouver l’équilibre et la
+          position idéale qui permette de suivre et contrôler son cheval en toute circonstance (en manège, en balade, en
+          sautant…) sans le gêner, en recherchant l’harmonie musculaire et le bien être de sa monture.
+        </p><br>
+        <img src='horseshoe.png' />
+        <p>
+          la pratique des activités équestres favorise le développement de l’enfant, sur le plan social
+          (activité de groupes), sur le plan affectif (maîtrise des émotions), au plan psycho-moteur (équilibre
+          coordination)
+        </p>
+      </div>
+    </div>
+
+    <div id="disciplines-container">
+      <div class="disc-title">
+        <p>DISCIPLINES ENSEIGNÉES</p>
+      </div>
+
+      <div class="disciplines">
+        <div id="disc-container">
+          <img src='cso.png' />
+          <p>CSO</p>
+        </div>
+        <div id="disc-container">
+          <img src='dressage.png' />
+          <p>Dressage</p>
+        </div>
+        <div id="disc-container">
+          <img src='cso.png' />
+          <p>Equifun</p>
+        </div>
+        <div id="disc-container">
+          <img src='complet.png' />
+          <p>Complet</p>
+        </div>
+        <div id="disc-container">
+          <%= image_tag('cso') %>
+          <p>Attelage</p>
+        </div>
+        <div id="disc-container">
+          <img src='cso.png' />
+          <p>Horse Ball</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="disciplines-other-container">
+      <div class="disciplines-other">
+        <div id="ext-container">
+          <img src='cso.png' />
+          <p>Équitation d'extérieur (initiation, perfectionnement)</p>
+        </div>
+        <div id="diplome-container">
+          <img src='diplome.png' />
+          <p>Formation professionnelle diplomante (AAE et BPJEPS)</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="groupes-container">
+      <div id="groupe-level1">
+        <div class="grp-img">
+          <div id="black-grp">
+            <div><p>GROUPES</p></div>
+          </div>
+        </div>
+        <div class="grp-desc">
+          <p>SCOLAIRES</p>
+          <p>CENTRES HANDICAPÉS</p>
+          <p>COMITÉS D'ENTREPRISES</p>
+          <p>AUTRES</p>
+        </div>
+      </div>
+
+      <div id="groupe-level2">
+        <div>
+          <p>Nous avons accueilli :</p>
+        </div>
+        <div id="acc-grp-img">
+          <img src='cer.png' />
+        </div>
+        <div id="acc-grp-img">
+          <img src='brisson.png' />
+        </div>
+        <div id="acc-grp-img">
+          <img src='mehun.png' />
+        </div>
+        <div id="acc-grp-img">
+          <p>Écoles maternelles et primaires de Vierzon</p>
+        </div>
+        <div id="acc-grp-img">
+          <p>PEPS FAMMAS des Grands Terres</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="formation-container">
+      <div id="formation-title">
+        <p>Apprenez à transmettre votre passion à LBE !</p>
+      </div>
+
+      <div id="formation-collapsible">
+        <ul class="collapsible" data-collapsible="expandable">
+          <li>
+            <div class="collapsible-header">
+              Formations Proposées
+              <img src='arrow-down.png' />
+            </div>
+            <div class="collapsible-body">
+              <span>
+                Formation Animateur Assistant d’Équitation: 490h de formation. <br>
+                Formation BPJEPS activités équestres en partenariat avec le CREPS de Bourges: 800h de formation,
+                à partir de Septembre 2018.
+              </span>
+            </div>
+          </li>
+          <li>
+            <div class="collapsible-header">
+              Pourquoi la Bidauderie Équitation ?
+              <img src='arrow-down.png' />>
+            </div>
+            <div class="collapsible-body">
+              <span>
+                Formation innovante réunissant les compétences du CREPS pour les contenus transversaux à tous les sports,
+                un formateur spécialiste Dressage, un formateur spécialiste du CSO, et un formateur spécialiste en pédagogie
+                et utilisation et travail de la cavalerie.
+              </span>
+            </div>
+          </li>
+          <li>
+            <div class="collapsible-header">
+              Pré-requis
+              <img src='arrow-down.png' />
+            </div>
+            <div class="collapsible-body">
+              <span>
+                Formation AAE: <br>
+                18 ans, galop 6 et PSC1 ou AFPS (sept 2017) <br><br>
+                Formation BPJEPS: <br>
+                18 ans, bon niveau ama3en CCE
+              </span>
+            </div>
+          </li>
+          <li>
+            <div class="collapsible-header">
+              Déroulement
+              <img src='arrow-down.png' />
+            </div>
+            <div class="collapsible-body">
+              <span>
+                Une promo en cours de 11 élèves moniteurs en formation jusqu’en
+                juin 2018, 800h de formation, préformation, mise à niveau, préparation aux tests.
+              </span>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div id="formation-partenaires">
+        <div>
+          <p>PARTENAIRES</p>
+        </div>
+
+        <div id="partenaires-form">
+          <img src='conseil-g.png' />
+          <img src='fafsea.gif' />
+          <p>Écuries de La Picardière</p>
+          <p>Écuries de l'Île Bragard</p>
+          <img src='creps.png' />
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <div id="footer1-container">
+      <div id="map-container">
+        <div id="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2708.524235082784!2d2.0898604152647438!3d47.24545137916235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47fada4641f015c9%3A0x58687334a497320e!2sLa+Bidauderie!5e0!3m2!1sen!2sfr!4v1488295245317" width="170" height="150" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <div id="address">
+          <p>La Bidauderie Equitation</p>
+          <p>La Bidauderie, 18100 Vierzon</p>
+          <p>02 48 71 68 82</p>
+        </div>
+      </div>
+      <div id="plan-site">
+        <ul>
+          <li><a href="#">Accueil</a></li>
+          <li><a href="#">Le Club</a></li>
+          <li><a href="#">Activités</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Tarifs</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Partenaires</a></li>
+        </ul>
+      </div>
+      <div id="social">
+        <div id="social-title">
+          <p>Rejoignez-nous sur Facebook !</p>
+        </div>
+        <div id="logo-social">
+          <img src='facebook.png' />
+        </div>
+      </div>
+    </div>
+    <div id="footer2-container">
+      <p>&copy; 2017 — labidauderie.fr</p>
+      <p>Mentions légales</p>
+      <p>|</p>
+      <p>Site réalisé par Justine Dupuis</p>
+    </div>
+  </footer>
+
+</body>
+</html>
