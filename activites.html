@@ -3,7 +3,11 @@
 <head>
   <title>La Bidauderie</title>
   <meta charset="utf-8" />
+  <link rel="icon" href="img/logo1.png">
   <link rel="stylesheet" href="styles/style.css" media="all" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles/materialize.css">
 </head>
 <body>
 
@@ -11,26 +15,21 @@
     <div id="menu-container-index" class="navbar-fixed-top">
       <div id="menu-left-index">
         <ul>
-          <li><img src='logo.png' /></li>
+          <li><a href="index.html"><img src='img/logo.png' class="js-logo"></a></li>
         </ul>
       </div>
       <div id="menu-right-index">
         <ul>
-          <li><a href="#">Le club</a></li>
-          <li><a href="#">Activités</a</li>
-          <li><a href="#">Tarifs</a</li>
-          <li><a href="#">Contact</a</li>
-          <li><a href="#">Partenaires</a</li>
-          <li><a href="#"><img src='facebook.png' /></a></li>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="club.html">Le club</a></li>
+          <li><a href="activites.html">Activités</a></li>
+          <li><a href="#">Tarifs</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Partenaires</a></li>
+          <li><img src='img/facebook.png'class="js-social2"></li>
+          <li><img src='img/instagram-logo.png' class="js-social1"></li>
         </ul>
       </div>
-    </div>
-
-    <div id="club-menu" class="navbar-fixed-top">
-      <p class="active">Le Club</p>
-      <p>Groupes</p>
-      <p>Devis</p>
-      <p>Formation</p>
     </div>
 
     <div id="particuliers-container">
@@ -39,7 +38,7 @@
           <div class="card" id="card">
             <div class="card-image">
               <div id="black-img"></div>
-              <img src='saut.jpg' />
+              <img src='img/saut.jpg'>
               <span class="card-title">Cours d'équitation</span>
             </div>
             <div class="card-content">
@@ -64,7 +63,7 @@
           <div class="card" id="card">
             <div class="card-image">
               <div id="black-img"></div>
-              <img src='saut2.jpg' />
+              <img src='img/saut2.jpg'>
               <span class="card-title">Écurie de propriétaires</span>
             </div>
             <div class="card-content">
@@ -88,7 +87,7 @@
           <div class="card" id="card">
             <div class="card-image">
               <div id="black-img"></div>
-              <img src='saut3.jpg' />
+              <img src='img/saut3.jpg'>
               <span class="card-title">Promenade Baby Poney</span>
             </div>
             <div class="card-content">
@@ -117,13 +116,13 @@
           Ensuite en plus de l’aspect bénéfique d’un sport de plein air collectif s’installe une vraie communication
           avec son cheval.
         </p> <br>
-        <img src='horseshoe.png' />
+        <img src='img/horseshoe.png'>
         <p>
           Le but de tout cavalier est d’arriver à faire corps avec son cheval c’est à dire trouver l’équilibre et la
           position idéale qui permette de suivre et contrôler son cheval en toute circonstance (en manège, en balade, en
           sautant…) sans le gêner, en recherchant l’harmonie musculaire et le bien être de sa monture.
         </p><br>
-        <img src='horseshoe.png' />
+        <img src='img/horseshoe.png'>
         <p>
           la pratique des activités équestres favorise le développement de l’enfant, sur le plan social
           (activité de groupes), sur le plan affectif (maîtrise des émotions), au plan psycho-moteur (équilibre
@@ -139,27 +138,27 @@
 
       <div class="disciplines">
         <div id="disc-container">
-          <img src='cso.png' />
+          <img src='img/cso.png'>
           <p>CSO</p>
         </div>
         <div id="disc-container">
-          <img src='dressage.png' />
+          <img src='img/dressage.png'>
           <p>Dressage</p>
         </div>
         <div id="disc-container">
-          <img src='cso.png' />
+          <img src='img/cso.png'>
           <p>Equifun</p>
         </div>
         <div id="disc-container">
-          <img src='complet.png' />
+          <img src='img/complet.png'>
           <p>Complet</p>
         </div>
         <div id="disc-container">
-          <%= image_tag('cso') %>
+          <img src='img/cso.png'>
           <p>Attelage</p>
         </div>
         <div id="disc-container">
-          <img src='cso.png' />
+          <img src='img/cso.png'>
           <p>Horse Ball</p>
         </div>
       </div>
@@ -168,11 +167,11 @@
     <div id="disciplines-other-container">
       <div class="disciplines-other">
         <div id="ext-container">
-          <img src='cso.png' />
+          <img src='img/cso.png'>
           <p>Équitation d'extérieur (initiation, perfectionnement)</p>
         </div>
         <div id="diplome-container">
-          <img src='diplome.png' />
+          <img src='img/diplome.png'>
           <p>Formation professionnelle diplomante (AAE et BPJEPS)</p>
         </div>
       </div>
@@ -198,13 +197,13 @@
           <p>Nous avons accueilli :</p>
         </div>
         <div id="acc-grp-img">
-          <img src='cer.png' />
+          <img src='img/cer.png'>
         </div>
         <div id="acc-grp-img">
-          <img src='brisson.png' />
+          <img src='img/brisson.png'>
         </div>
         <div id="acc-grp-img">
-          <img src='mehun.png' />
+          <img src='img/mehun.png'>
         </div>
         <div id="acc-grp-img">
           <p>Écoles maternelles et primaires de Vierzon</p>
@@ -225,7 +224,7 @@
           <li>
             <div class="collapsible-header">
               Formations Proposées
-              <img src='arrow-down.png' />
+              <img src='img/arrow-down.png'>
             </div>
             <div class="collapsible-body">
               <span>
@@ -238,7 +237,7 @@
           <li>
             <div class="collapsible-header">
               Pourquoi la Bidauderie Équitation ?
-              <img src='arrow-down.png' />>
+              <img src='img/arrow-down.png'>
             </div>
             <div class="collapsible-body">
               <span>
@@ -251,7 +250,7 @@
           <li>
             <div class="collapsible-header">
               Pré-requis
-              <img src='arrow-down.png' />
+              <img src='img/arrow-down.png'>
             </div>
             <div class="collapsible-body">
               <span>
@@ -265,7 +264,7 @@
           <li>
             <div class="collapsible-header">
               Déroulement
-              <img src='arrow-down.png' />
+              <img src='img/arrow-down.png'>
             </div>
             <div class="collapsible-body">
               <span>
@@ -283,11 +282,11 @@
         </div>
 
         <div id="partenaires-form">
-          <img src='conseil-g.png' />
-          <img src='fafsea.gif' />
+          <img src='img/conseil-g.png'>
+          <img src='img/fafsea.gif'>
           <p>Écuries de La Picardière</p>
           <p>Écuries de l'Île Bragard</p>
-          <img src='creps.png' />
+          <img src='img/creps.png'>
         </div>
       </div>
     </div>
@@ -323,7 +322,7 @@
           <p>Rejoignez-nous sur Facebook !</p>
         </div>
         <div id="logo-social">
-          <img src='facebook.png' />
+          <img src='img/facebook.png' class="js-social2">
         </div>
       </div>
     </div>
@@ -334,6 +333,12 @@
       <p>Site réalisé par Justine Dupuis</p>
     </div>
   </footer>
+
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/materialize.js"></script>
+  <script type="text/javascript" src="js/application.js"></script>
 
 </body>
 </html>

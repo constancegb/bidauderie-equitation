@@ -36,6 +36,7 @@ body {
   align-items: center;
   justify-content: space-between;
   background-color: #34495e;
+  padding-top: 10px;
 }
 
 ul li {
@@ -58,14 +59,26 @@ ul li {
 }
 
 #menu-right-index li a {
-  padding: 20px;
+  margin: 20px;
   text-decoration: none;
   color: white;
 }
 
+#menu-right-index li a:hover {
+    color: #e74c3c;
+}
+
 #menu-right-index img {
-  width: 20px;
-  height: 20px;
+  width: 17px;
+  height: 17px;
+  margin-right: 10px;
+}
+
+#menu-li-img-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Navbar - Page d'accueil */
@@ -91,18 +104,6 @@ ul li {
   margin-left: 30px;
 }
 
-#menu-left li:last-child {
-    display: none;
-}
-
-#menu-left li:last-child:hover {
-    display: block;
-}
-
-#menu-left li:first-child:hover {
-    display: none;
-}
-
 #menu-right ul {
   display: flex;
   flex-direction: row;
@@ -121,16 +122,17 @@ ul li {
 #menu-right img {
   width: 20px;
   height: 20px;
+  margin-right: 10px;
 }
 
 /* Home screen */
 #bg-index {
-  background-image: url(../equipe.jpg);
+  background-image: url(../img/equipe.jpg);
   width: 100%;
   height: 680px;
-  background-size: 100%;
+  background-size: cover;
   background-position: bottom;
-  opacity: 0.83;
+  opacity: 0.9;
 }
 
 #index-container {
@@ -138,7 +140,7 @@ ul li {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 420px; /* à repositionner? */
+  margin-top: 320px;
 }
 
 #title p {
@@ -164,8 +166,8 @@ ul li {
 
 #arrow img {
   width: 80px;
-  height: 50px;
-  margin-top: 5px;
+  height: 40px;
+  margin-top: 70px;
 }
 
 
@@ -185,13 +187,13 @@ ul li {
 #welcome-to-vierzon div:first-child p {
   width: 170px;
   text-align: center;
-  font-size: 2em;
+  font-size: 1.5em;
   font-family: 'Dancing Script';
 }
 
 #welcome-to-vierzon div:first-child {
   width: 400px;
-  height: 300px;
+  height: 200px;
   background-color: #34495e;
   display: flex;
   flex-direction: column;
@@ -273,8 +275,6 @@ ul li {
 #readmore {
   width: 100px;
   height: 40px;
-  font-family: 'Anton';
-  color: #e74c3c;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -294,6 +294,10 @@ ul li {
 
 #readmore p {
     margin-bottom: 0;
+}
+
+#readmore:hover {
+  border: 1px solid #e74c3c;
 }
 
 /* Equitation pour tous, page d'accueil part 4 */
@@ -421,55 +425,66 @@ button {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  margin-top: 40px;
 }
 
 #meetus {
-  padding: 10px;
-  background-color: white;
-  border: 2px solid #e74c3c;
-  border-radius: 2px;
-  margin: 30px;
-}
-
-#meetus:hover {
-  background-color: #34495e;
-  color: white;
+  width: 200px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #34495e;
+  border-radius: 3px;
+  margin-left: 30px;
+  margin-right: 50px;
 }
 
 #meetus a {
-  color: #e74c3c;
-  font-family: 'Anton';
-  font-size: 1em;
+  font-family: 'Roboto', sans-serif;
+  color: #34495e;
   text-decoration: none;
-  letter-spacing: 2px;
+  font-size: 1.1em;
+  font-weight: lighter;
+}
+
+#meetus:hover {
+  -webkit-box-shadow: 0px 0px 7px -2px #34495e;
+  -moz-box-shadow: 0px 0px 7px -2px #34495e;
+  box-shadow: 0px 0px 7px -2px #34495e;
 }
 
 #write {
-  padding: 10px;
-  background-color: white;
-  border: 2px solid #e74c3c;
-  border-radius: 2px;
-  margin: 30px;
-}
-
-#write:hover {
-  background-color: #34495e;
-  color: white;
+  width: 200px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #e74c3c;
+  border-radius: 3px;
+  margin-left: 30px;
+  margin-right: 50px;
 }
 
 #write a {
+  font-family: 'Roboto', sans-serif;
   color: #e74c3c;
-  font-family: 'Anton';
-  font-size: 1em;
   text-decoration: none;
-  letter-spacing: 2px;
+  font-size: 1.1em;
+  font-weight: lighter;
+}
+
+#write:hover {
+  -webkit-box-shadow: 0px 0px 7px -2px #e74c3c;
+  -moz-box-shadow: 0px 0px 7px -2px #e74c3c;
+  box-shadow: 0px 0px 7px -2px #e74c3c;
 }
 
 /* Footer */
 footer {
   background-color: #34495e;
   width: 100%;
-  height: 250px;
+  height: 230px;
   margin-top: 100px;
   display: flex;
   flex-direction: column;
@@ -482,6 +497,7 @@ footer {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
+  padding-top: 20px;
 }
 
 #map-container {
@@ -506,10 +522,11 @@ footer {
 
 #plan-site li a {
   font-family: 'Roboto';
-  font-size: 0.8em;
+  font-size: 0.9em;
   color: white;
   text-decoration: none;
   line-height: 30px;
+  margin: 5px;
 }
 
 #plan-site li a:hover {
@@ -525,13 +542,18 @@ footer {
 
 #social-title p {
   font-family: 'Dancing Script';
-  font-size: 1.3em;
+  font-size: 1.4em;
   color: white;
 }
 
+#logo-social {
+  margin: 10px;
+}
+
 #logo-social img {
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
+  margin: 5px;
 }
 
 #footer2-container {
@@ -551,34 +573,11 @@ footer {
 
 /* ------ HISTOIRE DU CLUB ------- */
 
-#club-menu {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  background-color: #e74c3c;
-  width: 100%;
-  height: 45px;
-  margin-top: 70px;
-  box-shadow: 2px 2px 2px #7f8c8d;
-}
-
-#club-menu p {
-  padding: 10px;
-  margin: 5px;
-  color: white;
-  font-family: Roboto;
-}
-
-#club-menu .active {
-  border-bottom: 2px solid white;
-}
-
 #histoire-title {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 200px;
+  margin-top: 130px;
 }
 
 #histoire-title p {
@@ -599,10 +598,10 @@ footer {
   width: 250px;
   height: 250px;
   border-radius: 50%;
-  background-image: url(centre-equestre.jpg);
+  background-image: url(../img/centre-equestre.jpg);
   background-position: bottom right;
   background-size: cover;
-  margin-bottom: 80px;
+  margin-bottom: 20px;
 }
 
 #histoire-txt {
@@ -612,9 +611,11 @@ footer {
 
 #histoire-txt p {
   color: #34495e;
-  font-size: 1em;
+  font-size: 1.3em;
   font-family: Roboto;
+  font-weight: lighter;
   margin: 30px;
+  width: 580px;
   text-align: justify;
   padding-top: 30px;
 }
@@ -653,13 +654,14 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-left: 40px;
-  margin-right: 40px;
-  width: 250px;
+  margin-left: 30px;
+  margin-right: 30px;
+  width: 300px;
   height: 350px;
   background-color: #ecf0f1;
   padding: 10px;
-  border-radius: 3px;
+  border-radius: 1px;
+  margin-top: 50px;
 }
 
 #employes-img img {
@@ -667,6 +669,7 @@ footer {
   width: 150px;
   height: 150px;
   border: 2px solid white;
+  margin-bottom: 10px;
 }
 
 #employes-txt {
@@ -678,7 +681,7 @@ footer {
 
 #employes-txt p {
   text-align: center;
-  line-height: 20px;
+  line-height: 15px;
   color: #34495e;
   font-family: Roboto;
 }
@@ -771,28 +774,28 @@ footer {
 }
 
 .img1 {
-  background-image: url(saut.jpg);
+  background-image: url(../img/saut.jpg);
   background-size: 160%;
   width: 200px;
   height: 200px;
 }
 
 .img2 {
-  background-image: url(bg.jpg);
+  background-image: url(../img/bg.jpg);
   background-size: 160%;
   width: 200px;
   height: 200px;
 }
 
 .img3 {
-  background-image: url(equipe.jpg);
+  background-image: url(../img/equipe.jpg);
   background-size: 160%;
   width: 200px;
   height: 200px;
 }
 
 .img4 {
-  background-image: url(formation.jpg);
+  background-image: url(../img/formation.jpg);
   background-size: 190%;
   width: 200px;
   height: 200px;
@@ -858,7 +861,7 @@ footer {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  background-image: url(chevaux.jpg);
+  background-image: url(../img/chevaux.jpg);
   background-size: 160%;
 }
 
@@ -866,7 +869,7 @@ footer {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  background-image: url(grand-poney.jpg);
+  background-image: url(../img/grand-poney.jpg);
   background-size: 140%;
   background-position: center;
 }
@@ -875,7 +878,7 @@ footer {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  background-image: url(shet.jpg);
+  background-image: url(../img/shet.jpg);
   background-size: 160%;
   background-position: center;
 }
@@ -884,7 +887,7 @@ footer {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  background-image: url(bg.jpg);
+  background-image: url(../img/bg.jpg);
   background-size: 160%;
   background-position: center;
 }
@@ -896,16 +899,13 @@ footer {
 
 /* ------ ACTIVITÉS ------ */
 
-#activites-container {
-  margin-top: 140px;
-}
-
 #particuliers-container {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: center;
   font-family: Roboto;
+  margin-top: 150px;
 }
 
 #card {
@@ -1193,7 +1193,7 @@ footer {
 }
 
 .grp-img {
-  background-image: url(bg.jpg);
+  background-image: url(../img/bg.jpg);
   background-position: center;
   background-size: 170%;
   width: 800px;
@@ -1370,14 +1370,3 @@ footer {
   text-align: center;
   width: 130px;
 }
-
-
-
-
-
-
-
-
-@import "bootstrap-sprockets";
-@import "bootstrap";
-@import "materialize";

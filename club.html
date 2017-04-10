@@ -3,7 +3,11 @@
 <head>
   <title>La Bidauderie</title>
   <meta charset="utf-8" />
+  <link rel="icon" href="img/logo1.png">
   <link rel="stylesheet" href="styles/style.css" media="all" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles/materialize.css">
 </head>
 <body>
 
@@ -11,27 +15,21 @@
     <div id="menu-container-index" class="navbar-fixed-top">
       <div id="menu-left-index">
         <ul>
-          <li><img src='logo.png' /></li>
+          <li><a href="index.html"><img src='img/logo.png' class="js-logo"></a></li>
         </ul>
       </div>
       <div id="menu-right-index">
         <ul>
+          <li><a href="index.html">Accueil</a></li>
           <li><a href="club.html">Le club</a></li>
-          <li><a href="activites.html">Activités</a</li>
-          <li><a href="#">Tarifs</a</li>
-          <li><a href="#">Contact</a</li>
-          <li><a href="#">Partenaires</a</li>
-          <li><a href="#"><img src='facebook.png' /></a></li>
+          <li><a href="activites.html">Activités</a></li>
+          <li><a href="#">Tarifs</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Partenaires</a></li>
+          <li id="item"><img src='img/facebook.png'class="js-social2"></li>
+          <li id="item"><img src='img/instagram-logo.png' class="js-social1"></li>
         </ul>
       </div>
-    </div>
-
-    <div id="club-menu" class="navbar-fixed-top">
-      <p class="active">Histoire</p>
-      <p>Équipe</p>
-      <p>Association</p>
-      <p>Installations</p>
-      <p>Cavalerie</p>
     </div>
 
     <div id="histoire-title">
@@ -43,14 +41,14 @@
       </div>
       <div id="histoire-txt">
         <p>
-          Structure équestre existant depuis les années 1960/1970 et étant passée entre les mains de différents exploitants,
-          l’activité équestre a été rachetée en sept 2011 par <span>Isabelle Gobert</span>. Après avoir créé et dirigé pendant 20 ans une
-          structure équestre à côté de fontainebleau, elle a souhaité s’installer en région centre avec un projet de
-          développement axé sur une formation de qualité dans des infrastructures fonctionnelles et agréables.<br><br>
-          Ce projet a débuté par un large renouvellement de la cavalerie d’instruction, la création d’une nouvelle
-          carrière de CSP de 40 par 80 en sable de fontainebleau, qui permet aujourd’hui à nos cavaliers une formation
-          complète du débutant au compétiteur (niveau club élite et ama 3) jusqu’au niveau professionnel avec la
-          formation AAE (animateur poney) et BPJEPS (moniteur d’équitation)
+          La Bidauderie Equitation fut acquise en septembre 2011 par Isabelle Gobert. Après avoir créé et dirigé
+          une structure équestre à côté de Fontainebleau pendant 20 ans, elle a souhaité s’installer en région
+          centre avec un projet de développement axé sur une formation moniteur de qualité, dans des infrastructures
+          fonctionnelles et agréables.<br><br>
+          Ce projet a débuté par un large renouvellement de la cavalerie d’instruction et la création d’une nouvelle
+          carrière de 40x80m en sable de Fontainebleau, qui permet aujourd’hui à nos cavaliers un apprentissage
+          optimal du débutant au compétiteur (niveau Club Élite et Amateur 3) et jusqu’au niveau professionnel avec
+          la formation animateur poney AAE et moniteur d’équitation (BPJEPS).
         </p>
       </div>
     </div>
@@ -62,45 +60,48 @@
     <div id="equipe-container-club">
       <div id="employes-container">
         <div id="employes-img">
-          <img src='isabelle.jpg' />
+          <img src='img/isabelle.jpg'>
         </div>
         <div id="employes-txt">
           <p>Isabelle Gobert</p>
-          <p>Gérante et monitrice depuis 2011</p>
-          <p>Blabla</p>
+          <p>Gérante</p>
+          <p>Monitrice diplômée BEES1 (Brevet d’État d’Éducateur Sportif 1er degré), mention équitation</p>
+          <p>25 ans d’expérience dans l’enseignement</p>
         </div>
       </div>
 
       <div id="employes-container">
         <div id="employes-img">
-          <img src='julie.jpg' />
+          <img src='img/julie.jpg' style="margin-bottom: 25px;">
         </div>
         <div id="employes-txt">
           <p>Julie Guerche</p>
-          <p>Responsable poney-club depuis 2012</p>
-          <p>BPJEPS</p>
+          <p> Responsable Poney-Club</p>
+          <p>Monitrice diplômée BPJEPS (Brevet Professionnel de la Jeunesse, de l'Éducation Populaire et du Sport)</p>
+          <p>En poste depuis 2012</p>
         </div>
       </div>
 
       <div id="employes-container">
         <div id="employes-img">
-          <img src='aurore.jpg' />
+          <img src='img/aurore.jpg' style="margin-bottom: 50px;">
         </div>
         <div id="employes-txt">
           <p>Aurore Guertault</p>
-          <p>Responsable écuries propriétaires depuis 2014</p>
-          <p>BPJEPS</p>
+          <p>Responsable écuries de propriétaires</p>
+          <p>En formation BPJEPS à La Bidauderie</p>
+          <p>En poste depuis 2014</p>
         </div>
       </div>
 
       <div id="employes-container">
         <div id="employes-img">
-          <img src='camille.jpg' />
+          <img src='img/camille.jpg' style="margin-bottom: 30px;">
         </div>
         <div id="employes-txt">
           <p>Camille Gabteau</p>
-          <p>Entretien des chevaux et installations</p>
-          <p>Pré-formation AAE et BPJEPS</p>
+          <p>Responsable entretien cavallerie & installations</p>
+          <p>En formation AAE (Assistant Animateur d’Équitation) & BPJEPS à la Bidauderie</p>
         </div>
       </div>
     </div>
@@ -112,13 +113,13 @@
     <div id="asso-container">
       <div id="asso-img-container">
         <div id="asso-img">
-          <%= image_tag('saut') %>
+          <img src="img/saut.jpg">
         </div>
         <div id="asso-img">
-          <%= image_tag('saut2') %>
+          <img src="img/saut2.jpg">
         </div>
         <div id="asso-img">
-          <%= image_tag('saut3') %>
+          <img src="img/saut3.jpg">
         </div>
       </div>
       <div id="asso-txt">
@@ -239,7 +240,7 @@
           <p>Rejoignez-nous sur Facebook !</p>
         </div>
         <div id="logo-social">
-          <img src='facebook.png' />
+          <img src='img/facebook.png' class="js-social2">
         </div>
       </div>
     </div>
@@ -250,6 +251,12 @@
       <p>Site réalisé par Justine Dupuis</p>
     </div>
   </footer>
+
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/materialize.js"></script>
+  <script type="text/javascript" src="js/application.js"></script>
 
 </body>
 </html>

@@ -1,11 +1,26 @@
-//= require jquery
-//= require jquery.turbolinks
-//= require jquery_ujs
-//= require turbolinks
-//= require materialize-sprockets
-//= require materialize
-//= require_tree .
+$(document).ready(function(){
+  $('.collapsible').collapsible();
+});
 
 $(document).ready(function(){
-    $('.collapsible').collapsible();
-  });
+  // jQuery for icons mouseover
+	$(".js-logo").hover(function() {
+		$(this).attr("src","img/logo1.png");
+			}, function() {
+		$(this).attr("src","img/logo.png");
+	});
+  $(".js-social1").hover(function() {
+		$(this).attr("src","img/instagram.png");
+			}, function() {
+		$(this).attr("src","img/instagram-logo.png");
+	});
+  $(".js-social2").hover(function() {
+		$(this).attr("src","img/facebook2.png");
+			}, function() {
+		$(this).attr("src","img/facebook.png");
+	});
+});
+
+$(document).ready(function(){
+   $('.parallax').parallax();
+ });
