@@ -22,5 +22,15 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-   $('.parallax').parallax();
- });
+  $('.carousel.carousel-slider').carousel({fullWidth: true});
+});
+
+$(document).ready(function(){
+  // jQuery for arrow up on click
+  // Marche pas pourtant pas loin (marche avec le hover)
+  $(".js-arrow").click(function() {
+		$(this).attr("src","img/up-arrow.png");
+			}, function() {
+		$(this).attr("src","img/arrow-down.png");
+	});
+});

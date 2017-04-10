@@ -4,7 +4,10 @@
 /* Supprime les marges sur tous le site */
 body {
   margin:0;
-  background-color: white;
+  background-image: url(../img/blurry.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /* SPINNER */
@@ -278,7 +281,7 @@ ul li {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid white;
+  border: 1px solid #34495e;
   border-radius: 3px;
   margin-left: 30px;
   margin-right: 50px;
@@ -286,7 +289,7 @@ ul li {
 
 #readmore a {
   font-family: 'Roboto', sans-serif;
-  color: white;
+  color: #34495e;
   text-decoration: none;
   font-size: 1.1em;
   font-weight: lighter;
@@ -297,7 +300,7 @@ ul li {
 }
 
 #readmore:hover {
-  border: 1px solid #e74c3c;
+  border: 1px solid #34495e;
 }
 
 /* Equitation pour tous, page d'accueil part 4 */
@@ -359,7 +362,7 @@ ul li {
 }
 
 #partenaires-title p {
-  color: #e74c3c;
+  color: #34495e;
   font-family: 'Anton';
   font-size: 1.5em;
   margin-bottom: 0;
@@ -709,7 +712,7 @@ footer {
 
 #asso-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   margin-top: 50px;
@@ -724,24 +727,25 @@ footer {
 }
 
 #asso-container img {
-  width: 350px;
-  height: 250px;
+  width: 650px;
+  height: 480px;
   margin-right: 50px;
 }
 
 #asso-container p {
-  width: 550px;
+  width: 400px;
   color: #34495e;
   text-align: justify;
   margin-top: 50px;
 }
 
 #asso-container ul {
-  width: 550px;
+  width: 400px;
 }
 
 #asso-container ul li {
   list-style: circle;
+  color: #34495e;
   margin: 10px;
 }
 
@@ -760,45 +764,17 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 400px;
+  width: 600px;
   height: auto;
 }
 
-#level {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  width: 400px;
-  height: 200px;
+.carousel-item img {
+  width: 500px;
+  height: 400px;
 }
 
-.img1 {
-  background-image: url(../img/saut.jpg);
-  background-size: 160%;
-  width: 200px;
-  height: 200px;
-}
-
-.img2 {
-  background-image: url(../img/bg.jpg);
-  background-size: 160%;
-  width: 200px;
-  height: 200px;
-}
-
-.img3 {
-  background-image: url(../img/equipe.jpg);
-  background-size: 160%;
-  width: 200px;
-  height: 200px;
-}
-
-.img4 {
-  background-image: url(../img/formation.jpg);
-  background-size: 190%;
-  width: 200px;
-  height: 200px;
+.carousel {
+  margin-left: 50px;
 }
 
 #installations-title {
@@ -822,6 +798,7 @@ footer {
 
 #installations-desc-container ul {
   width: 400px;
+  margin-top: 30px;
 }
 
 #installations-desc-container li {
@@ -895,6 +872,7 @@ footer {
 #type-desc p {
   color: #34495e;
   text-transform: uppercase;
+  margin-top: 20px;
 }
 
 /* ------ ACTIVITÉS ------ */
