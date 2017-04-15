@@ -764,10 +764,16 @@ footer {
   line-height: 15px;
   color: #34495e;
   font-family: Roboto;
+  font-weight: lighter;
 }
 
 #employes-txt p:first-child {
   font-weight: bold;
+}
+
+#employes-txt p:nth-child(2) {
+    font-style: italic;
+    text-transform: uppercase;
 }
 
 /* ------ ASSOCIATION ------- */
