@@ -782,6 +782,11 @@ footer {
   margin-bottom: 18px;
 }
 
+#employes-txt p:nth-child(2) {
+    font-style: italic;
+    text-transform: uppercase;
+}
+
 /* ------ ASSOCIATION ------- */
 
 #asso-title {
