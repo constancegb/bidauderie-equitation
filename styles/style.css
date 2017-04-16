@@ -358,7 +358,9 @@ ul li {
 #eq-bloc-1 {
   width: 100%;
   height: 300px;
-  background-color: red;
+  background-image: url(../img/cours-equit.jpg);
+  background-position: center;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -386,7 +388,9 @@ ul li {
 }
 
 #accueil-collectivites {
-  background-color: green;
+  background-image: url(../img/groupe1.jpg);
+  background-position: center;
+  background-size: cover;
   height: 300px;
   width: 33.3%;
   display: flex;
@@ -667,7 +671,7 @@ footer {
   width: 250px;
   height: 250px;
   border-radius: 50%;
-  background-image: url(../img/centre-equestre.jpg);
+  background-image: url(../img/histoire.jpg);
   background-position: bottom right;
   background-size: cover;
   margin-bottom: 20px;
@@ -761,7 +765,7 @@ footer {
 
 #employes-txt p {
   text-align: center;
-  line-height: 15px;
+  line-height: 17px;
   color: #34495e;
   font-family: Roboto;
   font-weight: lighter;
@@ -769,6 +773,13 @@ footer {
 
 #employes-txt p:first-child {
   font-weight: bold;
+  font-size: 1.2em;
+}
+
+#employes-txt p:nth-child(2) {
+  font-style: italic;
+  font-size: 1.1em;
+  margin-bottom: 18px;
 }
 
 #employes-txt p:nth-child(2) {
