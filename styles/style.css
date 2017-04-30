@@ -32,7 +32,7 @@ body {
   100% { transform: rotate(360deg); }
 }
 
-/* NAVBAR (pour ailleurs qu'en page d'accueil?)*/
+/* NAVBAR (pour ailleurs qu'en page d'accueil?) ----> OUI */
 #menu-container-index {
   display: flex;
   flex-direction: row;
@@ -69,6 +69,16 @@ ul li {
 
 #menu-right-index li a:hover {
     color: #e74c3c;
+}
+
+#menu-right-index ul li:last-child {
+  color:white;
+  text-decoration:underline;
+  cursor: pointer;
+}
+
+#menu-right-index ul li:hover {
+  color: #e74c3c;
 }
 
 #menu-right-index img {
@@ -120,6 +130,16 @@ ul li {
   padding: 17px;
   text-decoration: none;
   color: white;
+}
+
+#menu-right ul li:last-child {
+  cursor: pointer;
+  color:white;
+  text-decoration:underline
+}
+
+#menu-right ul li:hover {
+  color: #e74c3c;
 }
 
 #menu-right img {
@@ -342,8 +362,9 @@ ul li {
 
 #eq-title {
   color: #34495e;
-  font-family: 'Dancing Script';
-  font-size: 5em;
+  font-family: 'Roboto';
+  font-size: 4.5em;
+  margin-bottom: 50px;
 }
 
 #equitation-pour-tous-container {
@@ -456,13 +477,22 @@ ul li {
   margin-right: 10px;
   margin-left: 5px;
 }
-/* why can't I f*** overwrite #readmore? need blue button html 129*/
-button {
-    border: 1px solid #34495e;
+
+.button {
+  border: 1px solid #34495e;
 }
 
 .button a {
     color: #34495e;
+}
+
+.button:hover {
+  border: 1px solid white;
+  background-color: #34495e;
+}
+
+#readmore a:hover {
+  color: white;
 }
 
 /* Equipe */
@@ -738,7 +768,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   width: 240px;
   height: 350px;
   background-color: #ecf0f1;
@@ -760,7 +790,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 #employes-txt p {
@@ -811,12 +841,26 @@ footer {
   width: 100%;
 }
 
+#voile-blanc {
+  width: 100%;
+  height: 400px;
+  background: white; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, white , transparent); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(left, white, transparent); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(left, white, transparent); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to left, white , transparent); /* Standard syntax */
+  z-index: 0;
+  position: absolute;
+}
+
 #asso-img-container {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  width: 50%;
+  width: 70%;
+  z-index: 1;
+  position: relative;
 }
 
 #asso-img {
@@ -827,7 +871,7 @@ footer {
 
 #asso-container p {
   width: 350px;
-  color: white;
+  color: #34495e;
   text-align: justify;
 }
 
@@ -841,17 +885,19 @@ footer {
 
 #asso-container ul li {
   list-style: circle;
-  color: white;
+  color: #34495e;
   margin: 10px;
 }
 
 #asso-txt {
   width: 50%;
-  background-color: #34495e;
+  background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  font-family: 'Roboto';
+  font-weight: lighter;
 }
 
 /* ------ INSTALLATIONS ------ */
@@ -861,7 +907,6 @@ footer {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  margin-top: 100px;
 }
 
 #installations-img-container {
@@ -883,15 +928,14 @@ footer {
 }
 
 #installations-title {
-  background-color: rgba(52, 73, 94,1);
-  color: white;
-  padding: 20px;
-  font-size: 1em;
-  width: 300px;
+  color: #34495e;
+  font-size: 3em;
+  font-weight: bold;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-radius: 2px;
+  margin: 100px;
 }
 
 #installations-desc-container {
@@ -981,6 +1025,29 @@ footer {
 }
 
 /* ------ ACTIVITÉS ------ */
+#offres-particuliers-bandeau {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 200px;
+  margin-top: 80px;
+  background-image: url(../img/bandeau.jpg);
+  background-position: center;
+  background-size: 100%;
+}
+
+#offres-particuliers-bandeau p {
+  font-size: 2.3em;
+  font-family: 'Roboto';
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 500px;
+  color: white;
+  text-shadow: 1px 1px #000;
+  margin-left: 50px;
+}
 
 #particuliers-container {
   display: flex;
@@ -988,7 +1055,8 @@ footer {
   align-items: flex-start;
   justify-content: center;
   font-family: Roboto;
-  margin-top: 150px;
+  font-weight: lighter;
+  margin-top: 50px;
 }
 
 #card {
@@ -1000,6 +1068,20 @@ footer {
   background-color: white;
 }
 
+.card-image-text {
+  text-align: center;
+}
+
+.card-image-text p {
+  font-size: 1.5em;
+  margin: 5px;
+}
+
+.card-image img {
+  width: 350px;
+  height: 250px;
+}
+
 .card-title {
   font-family: Roboto;
   font-weight: bold;
@@ -1008,7 +1090,7 @@ footer {
 
 #black-img {
   width: 350px;
-  height: 231px;
+  height: 250px;
   background-color: rgba(0,0,0,0.6);
   position: absolute;
   z-index: 1;
@@ -1027,7 +1109,8 @@ footer {
   color: white;
   margin: 5px;
   border-radius: 3px;
-  font-family: Roboto;
+  font-family: 'Roboto';
+  font-weight: lighter;
   width: 100px;
   text-align: center;
 }
@@ -1080,8 +1163,10 @@ footer {
   width: 900px;
   height: auto;
   position: relative;
-  font-size: 2em;
+  font-size: 1.5em;
   color: #34495e;
+  font-weight: lighter;
+  font-family: 'Roboto';
   text-align: center;
   margin-top: 80px;
 }
